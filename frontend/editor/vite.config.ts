@@ -248,6 +248,20 @@ function devBackendFallbackPlugin(): PluginOption {
           res.end(JSON.stringify({ analyticsEnabled: false }));
           return;
         }
+        if (
+          url.startsWith("/api/v1/policies") ||
+          url.startsWith("/api/v1/notifications") ||
+          url.startsWith("/api/v1/processing-folders")
+        ) {
+          res.setHeader("Content-Type", "application/json");
+          res.end(JSON.stringify([]));
+          return;
+        }
+        if (url.startsWith("/api/v1/config/login-disclaimer")) {
+          res.setHeader("Content-Type", "application/json");
+          res.end(JSON.stringify({ disclaimer: "" }));
+          return;
+        }
         next();
       });
     },
