@@ -1,73 +1,44 @@
-# Contributing to Stirling-PDF
+# Contributing to PdfPapa 🌿
 
-Thank you for your interest in contributing to Stirling-PDF! There are many ways to contribute other than writing code. For example, reporting bugs, creating suggestions, and adding or modifying translations.
+Thank you for your interest in contributing to **PdfPapa**! There are many ways to contribute other than writing code — reporting bugs, suggesting new features, improving documentation, and adding translations.
 
 ## License
 
-By contributing to this project, you agree that your contributions will be licensed under the project [license](LICENSE), which follows an open-core model. 
-The codebase is a mix of MIT and source-available code, so your contribution is licensed according to the directory it is committed to.
+By contributing to this project, you agree that your contributions will be licensed under the project [LICENSE](LICENSE).
 
-PRs are welcome in any directory by any user, just be aware of which license applies to the code you change.
+Pull Requests are welcome by any user.
 
 ## Issue Guidelines
 
-Issues can be used to report bugs, request features, or ask questions. If you have a question, you could also ask us in our [Discord](https://discord.gg/FJUSXUSYec).
-
-Before opening an issue, please check to make sure someone hasn't already opened an issue about it.
+Issues can be used to report bugs, request features, or ask questions:
+- Open an issue on our [GitHub Issues](https://github.com/Kachhawah/PdfPapa/issues).
+- Before opening an issue, please check to make sure someone hasn't already opened an issue about it.
 
 ## Pull Requests
 
-Before you start working on an issue, please comment on (or create) the issue and wait for it to be assigned to you. If someone has already been assigned but didn't have the time to work on it lately, please communicate with them and ask if they're still working on it. This is to avoid multiple people working on the same issue.
-
-Once you have been assigned an issue, you can start working on it. When you are ready to submit your changes, open a pull request.
-For a detailed pull request tutorial, see [this guide](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github).
+1. Fork the repo: `https://github.com/Kachhawah/PdfPapa`
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes with clear, concise messages
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request on [GitHub](https://github.com/Kachhawah/PdfPapa/pulls)
 
 ## Development Quick Start
 
-This project uses [Task](https://taskfile.dev/) as a unified command runner. After cloning:
+### Frontend
+```bash
+cd frontend
+npm install
+npx vite editor --port 5173 --host
+```
 
-1. Install the `task` CLI: https://taskfile.dev/installation/
-2. Run `task install` to install all dependencies
-3. Run `task dev` to start backend + frontend or `task desktop:dev` to start the desktop application
-4. Run `task check` before submitting a PR
-
-Run `task --list` to see all available commands.
+Open `http://localhost:5173/` in your browser.
 
 ## Pull Request Guidelines
 
-Please make sure your Pull Request adheres to the following guidelines:
+- Keep Pull Requests focused and atomic.
+- Keep commits clear, concise, and easy to understand.
+- Ensure all styling respects the **Green & White** theme and existing token architecture.
 
-- Use the PR template provided.
-- Keep your Pull Request title succinct, detailed, and to the point.
-- Keep commits atomic. One commit should contain one change. If you want to make multiple changes, submit multiple Pull Requests.
-- Commits should be clear, concise, and easy to understand.
-- References to the Issue number in the Pull Request and/or Commit message.
-- Every comment in the diff should say something the code does not. See [Code comments](devGuide/CODE_COMMENTS.md); `task comment-lint` checks the mechanical part.
+---
 
-## Translations
-
-If you would like to add or modify a translation, please see [How to add new languages to Stirling-PDF](devGuide/HowToAddNewLanguage.md). Also, please create a Pull Request so others can use it!
-
-## Docs
-
-Documentation for Stirling-PDF is handled in a separate repository. Please see [Docs repository](https://github.com/Stirling-Tools/Stirling-Tools.github.io) or use the "edit this page"-button at the bottom of each page at [https://docs.stirlingpdf.com/](https://docs.stirlingpdf.com/).
-
-## Fixing Bugs or Adding a New Feature
-
-First, make sure you've read the section [Pull Requests](#pull-requests).
-
-If, at any point in time, you have a question, please feel free to ask in the same issue thread or in our [Discord](https://discord.gg/FJUSXUSYec).
-
-## Developer Documentation
-
-For technical guides, setup instructions, and development resources:
-
-- [Developer Guide](DeveloperGuide.md) - Main setup and architecture guide
-- [Taskfile.yml](Taskfile.yml) - Unified task runner for all build/dev/test/lint commands
-- [Exception Handling Guide](devGuide/EXCEPTION_HANDLING_GUIDE.md) - Error handling patterns and i18n
-- [Translation Guide](devGuide/HowToAddNewLanguage.md) - Adding new languages
-- And more in the [devGuide folder](devGuide/)
-
-For configuration and usage guides, see:
-- [Database Guide](DATABASE.md) - Database setup and configuration
-- [OCR Guide](HowToUseOCR.md) - OCR setup and configuration
+Maintained with ❤️ by [Saurabh Singh (Kachhawah)](https://github.com/Kachhawah).

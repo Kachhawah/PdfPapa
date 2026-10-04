@@ -1,4 +1,11 @@
-<svg width="92" height="100" viewBox="0 0 92 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 50L60 0V46.5L0 96.5V50Z" fill="#22c55e" fill-opacity="0.85"/>
-<path d="M32 53L92 3V49.5L32 99.5V53Z" fill="#16a34a" fill-opacity="0.95"/>
+<svg width="36" height="40" viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pdfpapa-notext-dark" x1="2" y1="2" x2="34" y2="38" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4ade80"/>
+      <stop offset="1" stop-color="#16a34a"/>
+    </linearGradient>
+  </defs>
+  <path d="M4 2C2.89543 2 2 2.89543 2 4V36C2 37.1046 2.89543 38 4 38H32C33.1046 38 34 37.1046 34 36V12L24 2H4Z" fill="url(#pdfpapa-notext-dark)"/>
+  <path d="M24 2V12H34L24 2Z" fill="#bbf7d0"/>
+  <path d="M11 13H19C22.3137 13 25 15.6863 25 19C25 22.3137 22.3137 25 19 25H15V31H11V13ZM15 17V21H18.5C19.6046 21 20.5 20.1046 20.5 19C20.5 17.8954 19.6046 17 18.5 17H15Z" fill="#ffffff"/>
 </svg>
